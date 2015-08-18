@@ -1,6 +1,6 @@
-length = 40.30;
-width = 27.80;
-depth = 9.50;
+length = 41.0;
+width = 28.0;
+depth = 9.0;
 perimeter = 2;
 
 difference(){
