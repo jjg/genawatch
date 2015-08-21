@@ -1,4 +1,4 @@
-design_version = "V7";
+design_version = "V8";
 length = 41.0;
 width = 28.5;
 depth = 9.0;
@@ -76,22 +76,22 @@ union(){
 	}
 
 	// left button nub
-	translate([36,-.5,depth]){
+	translate([36,-.7,depth]){
 		sphere(r=button_nub);
 	}
 	
 	// right top button nub
-	translate([9.5,width+perimeter+(button_nub/2)+1,depth]){
+	translate([9.5,width+perimeter+(button_nub/2)+1.2,depth]){
 		sphere(r=button_nub);
 	}
 	
 	// right middle button nub
-	translate([22,width+perimeter+(button_nub/2)+1,depth]){
+	translate([22,width+perimeter+(button_nub/2)+1.2,depth]){
 		sphere(r=button_nub);
 	}
 	
 	// right bottom button nub
-	translate([36,width+perimeter+(button_nub/2)+1,depth]){
+	translate([36,width+perimeter+(button_nub/2)+1.2,depth]){
 		sphere(r=button_nub);
 	}
 }
