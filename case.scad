@@ -1,9 +1,11 @@
-design_version = "V9";
+design_version = "V10";
 length = 41.0;
 width = 28.5;
 depth = 9.0;
 perimeter = 2;
 button_nub = 3;
+case_width = 45;
+case_length = 45;
 face_length = 30;
 face_width = 25;
 
@@ -11,7 +13,10 @@ union(){
 	difference(){
 		
 		// bounding box
-		cube([length+perimeter*2,width+perimeter*2,depth+perimeter*2]);
+		//cube([length+perimeter*2,width+perimeter*2,depth+perimeter*2]);
+		translate([0,-6,0]){
+			cube([case_length,case_width,depth+perimeter*2]);
+		}
 		
 		// space needed to hold GENA
 		translate([perimeter,perimeter,-perimeter]){
@@ -33,19 +38,19 @@ union(){
 		}
 		
 		// usb opening
-		translate([16,-1,-1]){
-			cube([13,perimeter+2,depth+1]);
+		translate([16,-1-6,-1]){
+			#cube([13,perimeter+2+6,depth+1]);
 		}
 		
 		// left button slot
-		translate([32.5,-1,-1]){
-			cube([1,perimeter+2,depth+perimeter+1]);
+		translate([32.5,-1-6,-1]){
+			cube([1,perimeter+2+6,depth+perimeter+1]);
 		}
-		translate([32.5,perimeter-1,-1]){
-			cube([6,2,depth+perimeter+1]);
+		translate([32.5,perimeter-1-6,-1]){
+			cube([6,2+6,depth+perimeter+1]);
 		}
-		translate([38.5,-1,-1]){
-			cube([1,perimeter+2,depth+perimeter+1]);
+		translate([38.5,-1-6,-1]){
+			cube([1,perimeter+2+6,depth+perimeter+1]);
 		}
 		
 		// right top button slot
@@ -83,6 +88,11 @@ union(){
 	}
 
 	// left button nub
+	translate([36,-.7,depth-perimeter]){
+		rotate([90,0,0]){
+			cylinder(r=button_nub,h=6);
+		}
+	}
 	translate([36,-.7,depth-perimeter]){
 		sphere(r=button_nub);
 	}
