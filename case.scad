@@ -1,4 +1,4 @@
-design_version = "V9";
+design_version = "V10";
 length = 41.0;
 width = 28.5;
 depth = 9.0;
@@ -33,8 +33,8 @@ union(){
 		}
 		
 		// usb opening
-		translate([16,-1,-1]){
-			cube([13,perimeter+2,depth+1]);
+		translate([16.5,-1,-1]){
+			#cube([12,perimeter+2,depth+1]);
 		}
 		
 		// left button slot
