@@ -4,8 +4,8 @@ width = 28.5;
 depth = 9.0;
 perimeter = 2;
 button_nub = 3;
-face_length = 30;
-face_width = 25;
+face_length = 29;
+face_width = 24;
 
 union(){
 	difference(){
@@ -19,13 +19,13 @@ union(){
 		}
 		
 		// opening for watch face
-		translate([6,3,depth+1]){
+		translate([7.5,4.5,depth+1]){
 			cube([face_length, face_width,perimeter+2]);
 		}
 		
 		// watermark
-		rotate([0,180,0]){
-			translate([-length/2,width/2,-1.5]){
+		translate([length+(perimeter*2)-1,width/2,10]){
+			rotate([0,90,0]){
 				linear_extrude(height = 10){
 				   text(design_version,size=4);
 				}
@@ -83,22 +83,22 @@ union(){
 	}
 
 	// left button nub
-	translate([36,-.7,depth-perimeter]){
+	translate([36,-.8,depth-perimeter]){
 		sphere(r=button_nub);
 	}
 	
 	// right top button nub
-	translate([9.5,width+perimeter+(button_nub/2)+1.2,depth-perimeter]){
+	translate([9.5,width+perimeter+(button_nub/2)+1.3,depth-perimeter]){
 		sphere(r=button_nub);
 	}
 	
 	// right middle button nub
-	translate([22,width+perimeter+(button_nub/2)+1.2,depth-perimeter]){
+	translate([22,width+perimeter+(button_nub/2)+1.3,depth-perimeter]){
 		sphere(r=button_nub);
 	}
 	
 	// right bottom button nub
-	translate([36,width+perimeter+(button_nub/2)+1.2,depth-perimeter]){
+	translate([36,width+perimeter+(button_nub/2)+1.3,depth-perimeter]){
 		sphere(r=button_nub);
 	}
 }
