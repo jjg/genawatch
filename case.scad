@@ -27,6 +27,19 @@ union(){
 		translate([6,3,depth+1]){
 			cube([face_length, face_width,perimeter+2]);
 		}
+/*
+		// face opening champher
+		translate([6,3,depth+10]){
+			rotate([180,0,0]){
+				#polyhedron(
+					points=[ [10,10,0],[10,-10,0],[-10,-10,0],[-10,10,0],
+						[0,0,10]  ],
+					faces=[ [0,1,4],[1,2,4],[2,3,4],[3,0,4],
+						[1,0,3],[2,1,3] ]
+				);
+			}
+		}
+*/
 		
 		// watermark
 		rotate([0,180,0]){
