@@ -34,7 +34,7 @@ union(){
 		
 		// usb opening
 		translate([16.5,-1,-1]){
-			#cube([12,perimeter+2,depth+1]);
+			#cube([12,perimeter+2,depth]);
 		}
 		
 		// left button slot
