@@ -8,6 +8,8 @@ Once the functional design is complete I plan to spend some time making it look 
 
 #notes#
 
+I print this face-down with support for the band connectors (it's a pretty steep overhang).  I've been printing it at .3mm layers and 10% fill (mostly for speed, there's been a lot of iterations).
+
 pin_loop.stl and the links are from Thing 228757.  I had to modify the links to fit when printed on my printer.  The "source" for the modified links can be found on Tinkercad at the link in the reference section below.
 
 #References#
