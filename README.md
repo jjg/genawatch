@@ -1,3 +1,7 @@
+# This project has moved to Gitlab: [https://gitlab.com/jgullickson/genawatch](https://gitlab.com/jgullickson/genawatch)
+
+## This repository exists for historical purposes only.
+
 #genawatch#
 Printable wristwatch case for Mixtile GENA.
 
